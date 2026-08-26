@@ -27,7 +27,7 @@ Analysis workflows and scripts supporting the panAD single-nucleus transcriptomi
 ## Analysis Modules
 
 ### 1. MONET Subtyping (`01_monet_subtyping/`)
-Masked variational autoencoder + Gaussian mixture model ensemble framework ("MONET") that resolves four reproducible AD molecular subtypes from covariate-adjusted, multi-cell-type pseudobulk expression. Trains across 20 random seeds and derives a consensus clustering from the resulting pairwise sample co-assignment matrix. An earlier exploratory approach (1D convolutional autoencoder + Harmony + UMAP + DBSCAN), not used for any results in the manuscript, is preserved in `legacy/01_cnn_subtyping_early_trial`.
+Masked variational autoencoder + Gaussian mixture model ensemble framework ("MONET") that resolves four reproducible AD molecular subtypes from covariate-adjusted, multi-cell-type pseudobulk expression. Trains across 20 random seeds and derives a consensus clustering from the resulting pairwise sample co-assignment matrix. 
 
 ### 2. Differential Expression (`02_deg_analysis/`)
 Differential gene expression across AD subtypes (1--4), MCI, and controls using multiple frameworks:
