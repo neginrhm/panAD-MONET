@@ -1,0 +1,57 @@
+name: negin-ad
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  # Python core
+  - python>=3.9
+  - pip
+
+  # Single-cell (Python)
+  - scanpy>=1.9
+  - anndata>=0.8
+  - loompy
+
+  # Deep learning
+  - pytorch>=1.13
+  - umap-learn>=0.5
+
+  # SCENIC
+  - pyscenic>=0.12
+
+  # Data & visualization (Python)
+  - numpy>=1.23
+  - pandas>=1.5
+  - matplotlib>=3.6
+  - seaborn>=0.12
+  - scipy>=1.9
+  - scikit-learn>=1.1
+  - networkx>=2.8
+  - python-igraph>=0.10
+  - openpyxl>=3.0
+
+  # R and R packages
+  - r-base>=4.2
+  - r-seurat>=4.3
+  - r-dplyr
+  - r-ggplot2
+  - r-cowplot
+  - r-forcats
+  - r-tidyr
+  - r-glue
+  - r-scales
+  - r-matrix
+  - r-future
+  - bioconda::bioconductor-mast
+  - bioconda::r-wgcna
+
+  # R-Python interop
+  - r-reticulate
+  - rpy2
+
+  # pip-only packages
+  - pip:
+      - harmonypy>=0.0.9
+      - adjustText>=0.8
+      - hdWGCNA  # if available via pip; otherwise install in R

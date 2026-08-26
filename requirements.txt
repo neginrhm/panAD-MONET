@@ -1,0 +1,29 @@
+# Core single-cell analysis
+scanpy>=1.9
+anndata>=0.8
+
+# Deep learning (CNN subtyping)
+torch>=1.13
+umap-learn>=0.5
+harmonypy>=0.0.9
+
+# SCENIC (gene regulatory networks)
+pyscenic>=0.12
+
+# Data & visualization
+numpy>=1.23
+pandas>=1.5
+matplotlib>=3.6
+seaborn>=0.12
+scipy>=1.9
+scikit-learn>=1.1
+
+# Network analysis
+networkx>=2.8
+python-igraph>=0.10
+
+# Plotting utilities
+adjustText>=0.8
+
+# Excel support (for GWAS gene lists)
+openpyxl>=3.0
