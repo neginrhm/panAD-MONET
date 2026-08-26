@@ -1,6 +1,6 @@
-# Single-Nucleus Transcriptomic Analysis of Alzheimer's Disease Subtypes
+# Single-Nucleus Transcriptomic Analysis and Molecular Subtyping of Alzheimer’s Disease
 
-Analysis code for single-nucleus RNA-seq (snRNA-seq) characterization of Alzheimer's disease (AD) subtypes, including sex-stratified cell-cell communication, gene regulatory networks, and co-expression module analyses.
+Analysis workflows and scripts supporting the panAD single-nucleus transcriptomic atlas and MONET molecular subtyping framework, including differential expression, co-expression networks, cell–cell communication, and gene regulatory network analyses.
 
 > **Note:** This repository will be made public upon publication.
 
