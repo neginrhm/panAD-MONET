@@ -4,7 +4,7 @@
 # Description: Run CellChat cell-cell communication inference on control
 #              female snRNA-seq data grouped by scANVI-predicted cell types.
 #
-# Inputs:  h5ad/12adata_ct_female.h5ad  (AnnData with predictions_scanvi labels)
+# Inputs:  h5ad/13adata_ct_female.h5ad  (AnnData with predictions_scanvi labels)
 # Outputs: cellchat_by_ct_fe.rds        (CellChat object)
 #          celltype_global_circlesct_fe.pdf (circle plot of interactions)
 #
@@ -22,7 +22,7 @@ options(future.globals.maxSize = 300000 * 1024^2)  # 100 GB
 
 # --- Load data ---
 ad <- reticulate::import("anndata", convert = FALSE)
-obj <- ad$read_h5ad(file.path(BASE_DIR, "h5ad", "12adata_ct_female.h5ad"))
+obj <- ad$read_h5ad(file.path(BASE_DIR, "h5ad", "13adata_ct_female.h5ad"))
 
 obj <- obj[obj$obs$predictions_scanvi != "unknown", ]
 

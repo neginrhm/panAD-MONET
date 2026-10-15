@@ -1,4 +1,4 @@
-name: negin-ad
+name: panad-monet
 channels:
   - conda-forge
   - bioconda
@@ -12,10 +12,12 @@ dependencies:
   - scanpy>=1.9
   - anndata>=0.8
   - loompy
+  - h5py
 
   # Deep learning
   - pytorch>=1.13
   - umap-learn>=0.5
+  - pynndescent
 
   # SCENIC
   - pyscenic>=0.12
@@ -25,11 +27,15 @@ dependencies:
   - pandas>=1.5
   - matplotlib>=3.6
   - seaborn>=0.12
+  - plotly
+  - upsetplot
   - scipy>=1.9
   - scikit-learn>=1.1
   - networkx>=2.8
   - python-igraph>=0.10
   - openpyxl>=3.0
+  - tqdm
+  - cytoolz
 
   # R and R packages
   - r-base>=4.2
@@ -39,12 +45,31 @@ dependencies:
   - r-cowplot
   - r-forcats
   - r-tidyr
+  - r-tidyverse
   - r-glue
   - r-scales
   - r-matrix
   - r-future
+  - r-optparse
+  - r-patchwork
+  - r-tibble
+  - r-rlang
+  - r-boot
+  - r-viridis
+  - r-rcolorbrewer
+  - r-circlize
+  - r-ggpubr
+  - r-ggsignif
+  - r-tidytext
+  - r-anndata
+  - r-enrichr
+  - r-hdf5r
+  - r-harmony
   - bioconda::bioconductor-mast
   - bioconda::r-wgcna
+  - bioconda::bioconductor-complexheatmap
+  - bioconda::bioconductor-org.hs.eg.db
+  - bioconda::bioconductor-annotationdbi
 
   # R-Python interop
   - r-reticulate
@@ -52,6 +77,8 @@ dependencies:
 
   # pip-only packages
   - pip:
+      - scvi-tools==1.3.3
+      - scikit-misc
+      - leidenalg
       - harmonypy>=0.0.9
       - adjustText>=0.8
-      - hdWGCNA  # if available via pip; otherwise install in R
